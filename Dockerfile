@@ -4,8 +4,6 @@ LABEL maintainer "nishipy"
 
 EXPOSE 8000
 
-#ENV MKDOCS_VERSION="1.0.4"
-
 RUN apk update \
   && apk add --no-cache gcc libc-dev python3 py3-pip python3-dev \
   && pip3 install --upgrade pip \
