@@ -17,7 +17,12 @@ http://localhost:8000
 ![](images/sampledoc.jpg)
 
 ## Testing
-- Simple test by using curl.
+- Test by using curl.
   ```
-  sh ./serve_test.sh 
+  sh test/serve_test.sh 
+  ```
+
+- Test by using Selenium
+  ```
+  python test/test.py
   ```
