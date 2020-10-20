@@ -26,7 +26,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: nishipy/mkdocs:$(date +%s):latest
+        tags: nishipy/mkdocs:latest
     # - name: Build the Docker image
     #   run: docker build . --file Dockerfile --tag nishipy/mkdocs:$(date +%s)
     
