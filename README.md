@@ -26,3 +26,4 @@ http://localhost:8000
   ```
   python test/test.py
   ```
+  ![](images/selenuim_test.gif)
