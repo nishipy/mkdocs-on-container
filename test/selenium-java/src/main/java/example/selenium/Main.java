@@ -10,12 +10,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Main {
 	public static void main(String args[]) throws Exception {
-		System.out.println("Hello World!");
-		new Main().test();
+		String url;
+		if(args.length == 0){
+			url = "http://localhost:8000/";
+		}else{
+			url = args[0];
+		}
+		new Main().checkTitle(url);
 	}
 
 	@Test
-	public void test() throws Exception{
+	public void checkTitle(String url) throws Exception{
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://localhost:8000/");
 		try {
