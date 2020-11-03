@@ -8,6 +8,9 @@ docker build . -t mkdocs
 ```
 docker run --name mkdocs -d -p 8000:8000 mkdocs
 ```
+```
+docker run --name mkdocs -d -p 8000:8000 -v $(pwd)/your-mkdocs-dir/:/workdir/ mkdocs
+```
 
 ## See documentation on your browser
 ```

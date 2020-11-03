@@ -12,4 +12,4 @@ RUN apk update \
 WORKDIR /workdir
 COPY mkdocsdir/ /workdir/
 
-ENTRYPOINT ["/bin/sh", "-c", "mkdocs serve"]
+CMD ["mkdocs", "serve"]
